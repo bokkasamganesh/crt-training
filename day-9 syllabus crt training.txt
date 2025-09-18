@@ -1,0 +1,119 @@
+polymorphism
+# is a word that came from two greek words, poly meaning many and morph meaning form. 
+# it refers to the ability of a single function or method to work in different ways based on the input or context.
+
+duck typing
+# duck typing is a concept in programming that focuses on the behavior of an object rather than its specific type.
+# it is based on the idea that "if it looks like a duck and quacks like a duck, it must be a duck."
+
+operator overloading
+# operator overloading is a feature in some programming languages that allows operators to be redefined for user-defined types.
+
+method overloading
+# method overloading is a feature in some programming languages that allows multiple methods to have the same
+# name but different parameters (number, type, or both) within the same class.
+
+method overriding
+# method overriding is a feature in object-oriented programming that allows a subclass or child class to provide
+# a specific implementation of a method that is already defined in its superclass or parent class.
+# this allows the subclass to modify or extend the behavior of the inherited method.
+
+# what is operator?
+# an operator is a symbol that tells the compiler or interpreter to perform specific mathematical, relational or logical operation and produce final result.
+# for example: +, -, *, /, %, etc.
+# operator overloading is a feature in some programming languages that allows operators to be redefined for user-defined types.
+# for example: in python, we can overload the + operator to concatenate two strings or add two numbers.
+
+# whai is method overriding?
+# method overriding is a feature in object-oriented programming that allows a subclass or child class to provide
+# a specific implementation of a method that is already defined in its superclass or parent class.
+# this allows the subclass to modify or extend the behavior of the inherited method.
+# for example: in python, we can override the __str__() method of a class to provide a custom string representation of an object.
+# class Animal:
+#     def sound(self):
+#         return "Animal sound"
+# class Dog(Animal):
+#     def sound(self):
+#         return "Bark"
+# dog = Dog()
+# print(dog.sound()) # Output: Bark
+# in this example, the Dog class overrides the sound() method of the Animal class to provide a specific implementation for dogs.
+
+# inheritance
+# inheritance is a fundamental concept in object-oriented programming that allows a class to inherit properties and behaviors from another class.
+# the class that inherits is called the subclass or child class, and the class that is inherited from is called the superclass or parent class.
+# inheritance promotes code reusability and establishes a hierarchical relationship between classes.
+#types
+# single inheritance
+# multiple inheritance
+# multilevel inheritance
+# hierarchical inheritance
+# hybrid inheritance
+
+# polymorphism
+# performing a single action in different ways is called polymorphism.
+#types
+# duck typing
+# operator overloading
+# method overloading its not supported in python 
+# method overriding
+
+# encapsulation
+# encapsulation is one of the fundamental principles of object-oriented programming (oop) that refers to
+# the bundling of data (attributes) and methods (functions) that operate on that data into a single unit called a class.
+# it restricts direct access to some of an object's components, which helps to prevent unintended interference
+# and misuse of the data. encapsulation is often achieved through access modifiers that define the visibility of class members.
+
+
+# abstraction
+# abstraction is a fundamental concept in object-oriented programming (oop) that focuses on simplifying complex systems
+# by hiding unnecessary details and exposing only the essential features or functionalities.
+# it allows programmers to create abstract classes and interfaces that define a common structure for related classes,
+# while leaving the implementation details to the subclasses.
+# abstraction helps to reduce complexity, improve code maintainability, and enhance the overall design of software systems.
+
+# real time example of abstraction: 
+# consider a car as an example of abstraction. when you drive a car, you don't need
+# to understand the intricate details of how the engine works, how the transmission system operates,
+# or how the braking system functions. instead, you interact with the car through a simplified interface,
+# such as the steering wheel, pedals, and gear shift. these controls allow you to operate the car without needing to know
+# the complex inner workings of its components. similarly, in programming, abstraction allows developers to focus
+# on high-level functionalities without getting bogged down by low-level implementation details.
+
+what is getter and setter?
+# getter and setter are methods used to access and modify the private attributes of a class.
+# they provide a way to control access to the attributes and ensure that they are used correctly.
+# a getter method is used to retrieve the value of a private attribute, while a setter method is used to set or update the value of a private attribute.
+# they are often used in conjunction with encapsulation to protect the integrity of the data and prevent
+# unauthorized access or modification.
+# for example:
+class Person:
+    def __init__(self, name, age):
+        self.__name = name  # private attribute
+        self.__age = age    # private attribute
+
+    # getter method for name
+    def get_name(self):
+        return self.__name
+
+    # setter method for name
+    def set_name(self, name):
+        self.__name = name
+
+    # getter method for age
+    def get_age(self):
+        return self.__age
+
+    # setter method for age
+    def set_age(self, age):
+        if age >= 0:  # validation check
+            self.__age = age
+        else:
+            print("Age cannot be negative")
+# usage
+person = Person("Alice", 30)
+print(person.get_name())  # Output: Alice
+print(person.get_age())   # Output: 30
+person.set_age(35)
+print(person.get_age())   # Output: 35
+person.set_age(-5)        # Output: Age cannot be negative
