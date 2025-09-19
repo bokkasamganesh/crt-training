@@ -1,0 +1,116 @@
+1) what is the meaning of data structure?
+   data structure are a way of storing and organizing data in a computer.
+
+2) algorithm
+   an algorithm is a step-by step set of instructions to solve a sprecific people perform task
+
+3) Time and Space Complexicity
+   time and space Complexicity are used to measure the efficiency of an algorithm.
+   time Complexicity refers to the amount of time taken by an algorithm to complete based the size of input
+   space Complexicity refers to the amount of memory used by the algorithm during execution.
+
+4) notation     represents      boundtype       use case
+   O(f(n))      worst-case      Upper           max time taken
+    (f(n))      best case       Lower           min time taken
+    (f(n))      avg-case        tight           exact growth of all cases
+
+5) data structures in python
+   they are two types
+   |
+   |-built-in
+            |
+            |-list,tuple,set,dictionary
+    |
+    |-user defined
+                |
+                |-stack, queue, linkedlist, tree, graph, hashmaps
+
+6) Creating a dictionary
+    A dictionaryis created in the form of key-value pair
+    syntax: dict_name = {key1:value1,kay2:value2}
+    
+    Key rules
+    While writing key we must follow the following rules:
+    *) key should be unique.
+    *) if we mention same key again, the old key will be overwritten\.
+    *) key should be immutable type
+    ex:- integer , string, tuple
+
+7) Built-in methods
+
+*)get() = Returns the value for the given key, or a defalut if key is not found.
+syntax:
+dict.get(key,default_value)
+*)keys() = Returns a view object of all keys in the dictionary
+syntax:
+dict.keys()
+*)update()
+syntax:
+dict.items()
+*)update()
+syntax: 
+dict.update(other_dictionary)
+*)pop()
+syntax:
+dict.pop(key)
+*)popitem()
+syntax:
+dict.popitem()
+*)setdeflut()
+syntax:
+dict.setdefalut(key,defalut)
+*)clear()
+syntax:
+dict.clear()
+
+8)  built-in functions
+    *)len()
+    syntax: lend(dict)
+    *)type()
+    syntax: type(dict)
+
+
+9)  dictionary comprehension in python
+    syntax: {key_expr:value_exper for item in iterable}
+
+
+10)  what is stack?
+    def: A linear data structurethat follows the LIFO (lias in first out) principles
+    stack operations:
+    *) push
+    add an element to the top of the stack
+    time:0(1) avg Complexicity
+    *) pop
+    remove and return the top element from the stack
+    time: 0(1)
+    *) peek/top
+    view the top elemts without removing it
+    time: 0(1)
+    *) isempty
+    checkif the satck contains any elements
+    time: 0(1)
+    *) size
+    return the number of elemts in the stack
+    time: 0(1)
+    
+
+11)  what is queue?
+    def = Alinear data structure that follows the fifio principles
+    real world analogy = like a line of people waiting - first person in line is served first
+    *)types
+    1) simple queue
+    2) circular queue
+    3) priority queue
+    4) double-ended queue
+    operations
+    *)enqueue
+    add an element to the rear of the queue
+    *)dequeue
+    remove and return
+    *) front
+    view the front element without removing
+    *) rear
+    view the rear element without removing
+    *) size
+    return number of elements in queue
+    time: 0(1)
